@@ -1,0 +1,152 @@
+{
+    "resign": {
+        "move_count": 3,
+        "score": 400,
+        "twosided": false,
+        "enabled": true
+    },
+    "draw": {
+        "move_number": 34,
+        "move_count": 8,
+        "score": 20,
+        "enabled": true
+    },
+    "maxmoves": {
+        "move_count": 1,
+        "enabled": false
+    },
+    "tb_adjudication": {
+        "syzygy_dirs": "",
+        "max_pieces": 0,
+        "ignore_50_move_rule": false,
+        "enabled": false
+    },
+    "opening": {
+        "file": "openings.pgn",
+        "format": 1,
+        "order": 0,
+        "plies": -1,
+        "start": 1
+    },
+    "pgn": {
+        "additional_lines_rgx": [],
+        "event_name": "Fastchess Tournament",
+        "site": "?",
+        "file": "final_boss_fight.pgn",
+        "notation": 0,
+        "track_nodes": false,
+        "track_seldepth": false,
+        "track_nps": false,
+        "track_hashfull": false,
+        "track_tbhits": false,
+        "track_timeleft": false,
+        "track_latency": false,
+        "track_pv": false,
+        "min": false,
+        "crc": false
+    },
+    "epd": {
+        "file": ""
+    },
+    "sprt": {
+        "alpha": 0.0,
+        "beta": 0.0,
+        "elo0": 0.0,
+        "elo1": 0.0,
+        "model": "normalized",
+        "enabled": false
+    },
+    "config_name": "config.json",
+    "output": 0,
+    "seed": 11690091249763933981,
+    "variant": 0,
+    "type": 0,
+    "gauntlet_seeds": 1,
+    "ratinginterval": 10,
+    "scoreinterval": 1,
+    "wait": 0,
+    "autosaveinterval": 20,
+    "games": 2,
+    "rounds": 20,
+    "concurrency": 1,
+    "force_concurrency": false,
+    "recover": false,
+    "noswap": false,
+    "reverse": false,
+    "report_penta": true,
+    "affinity": false,
+    "show_latency": false,
+    "log": {
+        "file": "",
+        "level": 2,
+        "compress": false,
+        "realtime": true,
+        "engine_coms": false
+    },
+    "engines": [
+        {
+            "name": "ProjectBot",
+            "dir": "",
+            "cmd": "python.exe",
+            "args": "my_bot_uci.py",
+            "restart": false,
+            "options": [],
+            "limit": {
+                "tc": {
+                    "increment": 0,
+                    "fixed_time": 0,
+                    "time": 600000,
+                    "moves": 0,
+                    "timemargin": 0
+                },
+                "nodes": 0,
+                "plies": 0
+            },
+            "variant": 0
+        },
+        {
+            "name": "Stockfish_Max",
+            "dir": "",
+            "cmd": "D:\\dev\\code\\AIMLCIA1\\stockfish.exe",
+            "args": "",
+            "restart": false,
+            "options": [],
+            "limit": {
+                "tc": {
+                    "increment": 100,
+                    "fixed_time": 0,
+                    "time": 1000,
+                    "moves": 0,
+                    "timemargin": 0
+                },
+                "nodes": 0,
+                "plies": 0
+            },
+            "variant": 0
+        }
+    ],
+    "stats": {
+        "Stockfish_Max vs ProjectBot": {
+            "wins": 9,
+            "losses": 1,
+            "draws": 30,
+            "penta_WW": 0,
+            "penta_WD": 9,
+            "penta_WL": 0,
+            "penta_DD": 10,
+            "penta_LD": 1,
+            "penta_LL": 0
+        },
+        "ProjectBot vs Stockfish_Max": {
+            "wins": 0,
+            "losses": 0,
+            "draws": 0,
+            "penta_WW": 0,
+            "penta_WD": 0,
+            "penta_WL": 0,
+            "penta_DD": 0,
+            "penta_LD": 0,
+            "penta_LL": 0
+        }
+    }
+}

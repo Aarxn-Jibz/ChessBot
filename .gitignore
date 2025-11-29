@@ -1,0 +1,11 @@
+# Ignore binaries/executables
+*.exe
+*.dll
+stockfish
+fastchess
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+
