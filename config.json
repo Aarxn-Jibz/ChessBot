@@ -32,7 +32,7 @@
         "additional_lines_rgx": [],
         "event_name": "Fastchess Tournament",
         "site": "?",
-        "file": "final_boss_fight.pgn",
+        "file": "patricia.pgn",
         "notation": 0,
         "track_nodes": false,
         "track_seldepth": false,
@@ -58,7 +58,7 @@
     },
     "config_name": "config.json",
     "output": 0,
-    "seed": 11690091249763933981,
+    "seed": 13454193350632799231,
     "variant": 0,
     "type": 0,
     "gauntlet_seeds": 1,
@@ -67,7 +67,7 @@
     "wait": 0,
     "autosaveinterval": 20,
     "games": 2,
-    "rounds": 20,
+    "rounds": 50,
     "concurrency": 1,
     "force_concurrency": false,
     "recover": false,
@@ -105,9 +105,9 @@
             "variant": 0
         },
         {
-            "name": "Stockfish_Max",
+            "name": "Patricia",
             "dir": "",
-            "cmd": "D:\\dev\\code\\AIMLCIA1\\stockfish.exe",
+            "cmd": "D:\\dev\\code\\AIMLCIA1\\patricia.exe",
             "args": "",
             "restart": false,
             "options": [],
@@ -126,18 +126,18 @@
         }
     ],
     "stats": {
-        "Stockfish_Max vs ProjectBot": {
-            "wins": 9,
-            "losses": 1,
-            "draws": 30,
+        "Patricia vs ProjectBot": {
+            "wins": 28,
+            "losses": 28,
+            "draws": 44,
             "penta_WW": 0,
-            "penta_WD": 9,
-            "penta_WL": 0,
-            "penta_DD": 10,
-            "penta_LD": 1,
+            "penta_WD": 11,
+            "penta_WL": 17,
+            "penta_DD": 11,
+            "penta_LD": 11,
             "penta_LL": 0
         },
-        "ProjectBot vs Stockfish_Max": {
+        "ProjectBot vs Patricia": {
             "wins": 0,
             "losses": 0,
             "draws": 0,
